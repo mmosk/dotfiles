@@ -1,6 +1,5 @@
-require('plugins.gitsigns')
-require('plugins.lightline')
-require('plugins.telescope')
-require('plugins.lsp')
-require('plugins.treesitter')
-
+require("plugins.gitsigns")
+require("plugins.lightline")
+require("plugins.lsp")
+require("plugins.telescope")
+require("plugins.treesitter")
