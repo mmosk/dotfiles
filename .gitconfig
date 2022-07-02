@@ -1,0 +1,7 @@
+[user]
+	name = Maksym Moskalchuk
+	email = maksym.moskalchuk@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
