@@ -1,5 +1,4 @@
 vim.g.lightline = {
-	colorscheme = "everforest",
 	active = {
 		left = {
 			{ "mode", "paste" },

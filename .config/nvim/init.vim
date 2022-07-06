@@ -22,7 +22,7 @@ set noswapfile
 set clipboard=unnamed
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'sainnhe/everforest'
+Plug 'morhetz/gruvbox'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
@@ -43,10 +43,7 @@ call plug#end()
 
 lua require('plugins')
 
-let g:everforest_transparent_background = 1
-
-colorscheme everforest
-set background=dark
+colorscheme gruvbox
 
 nnoremap <C-p> :Telescope find_files<Cr>
 
