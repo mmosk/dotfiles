@@ -4,8 +4,6 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set smartindent
-set number
-set numberwidth=1
 set relativenumber
 set signcolumn=yes
 set incsearch
@@ -17,17 +15,15 @@ set scrolloff=8
 set undofile
 set ignorecase
 set smartcase
-set noshowmode
 set noswapfile
 set clipboard=unnamed
+set laststatus=0
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'morhetz/gruvbox'
+Plug 'tanvirtin/monokai.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
-Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'mattn/emmet-vim'
@@ -43,7 +39,7 @@ call plug#end()
 
 lua require('plugins')
 
-colorscheme gruvbox
+colorscheme monokai
 
 nnoremap <C-p> :Telescope find_files<Cr>
 
